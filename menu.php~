@@ -3,6 +3,8 @@
 <body>
 <?php
 	$xml = simplexml_load_file('catalogue-pizzas.xml');
+	print_r($xml);
+	echo '<table>';
 	foreach($xml as $pizza){
 		echo '<h1>'.$pizza->nom.'</h1>';
 		echo '<img src="'.$pizza->image.'" width="160px" height="120px" /><br>';
